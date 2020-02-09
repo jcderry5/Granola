@@ -3,147 +3,112 @@
   <head>
     <meta charset="utf-8">
     <title>Questionaire</title>
+    <link href="questionaire_style.css" rel="stylesheet" type ="text/css">
+    <script src="questionaire_commands.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>This is a testing header</h1>
 
-    <div id="wrapper">
-  <h1>Match you with your STEM sister!</h1>a
-  <p>This is a sample paragraph that will have smarticle information later</p>
-
-  <!-- Text -->
-  <form class="form-horizontal">
-<fieldset>
-
-<!-- Form Name -->
-<legend>Get their information</legend>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="nameTag">Name</label>
-  <div class="col-md-4">
-  <input id="nameTag" name="nameTag" type="text" placeholder="Last Name, First Name" class="form-control input-md" required="">
-  <span class="help-block">example: Appleseed, John</span>
-  </div>
-</div>
-
-<!-- Button Drop Down -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="buttondropdown">Age</label>
-  <div class="col-md-4">
-    <div class="input-group">
-      <input id="buttondropdown" name="buttondropdown" class="form-control" placeholder="Enter Age" type="text" required="">
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-          Age
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu pull-right">
-          <li><a href="#">&lt;16</a></li>
-          <li><a href="#">16</a></li>
-          <li><a href="#">17</a></li>
-          <li><a href="#">18</a></li>
-          <li><a href="#">19</a></li>
-          <li><a href="#">20</a></li>
-          <li><a href="#">21</a></li>
-          <li><a href="#">22</a></li>
-          <li><a href="#">23</a></li>
-          <li><a href="#">24</a></li>
-          <li><a href="#">25</a></li>
-          <li><a href="#">&gt;25</a></li>
-        </ul>
+  <h1>Match you with your STEM sister!</h1>
+  <p id="description">This is a sample paragraph that will have smarticle information later</p>
+  
+  <div class="container">
+    <div class="row">
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="content col-1">
+        <label class="QTitleText" for="nameTag">Name</label>
+          <!-- This is where they will put their name -->
+          <div class="col-md-4">
+            <input id="nameTag" name="nameTag" type="text" placeholder="Last Name, First Name" class="form-control input-md" required="">
+          </div>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- Prepended checkbox -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="emailInput">Email</label>
-  <div class="col-md-4">
-    <div class="input-group">
-      <span class="input-group-addon">
-          <input type="checkbox">
-      </span>
-      <input id="emailInput" name="emailInput" class="form-control" type="text" placeholder="placeholder">
+    <div class="row">
+      <div class="content col-2">
+        <label class="QTitleText" id="n1" for="emailInput">Email</label>
+        <!-- This is where they will put their email -->
+          <div class="col-md-4">
+            <div class="input-group">
+              <input id="emailTag" name="emailTag" type="text" placeholder="myemail@gmail.com" class="form-control input-md" required="">
+            </div>
+       </div>
+      </div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
     </div>
-    <p class="help-block">Click if you want to share your email with other STEM gals</p>
-  </div>
-</div>
 
-<!-- Prepended checkbox -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="phoneInput">Phone Number</label>
-  <div class="col-md-4">
-    <div class="input-group">
-      <span class="input-group-addon">
-          <input type="checkbox" checked="checked">
-      </span>
-      <input id="phoneInput" name="phoneInput" class="form-control" type="text" placeholder="(xxx) xxx-xxxx">
+    <div class="row">
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="content col-3">
+        <label class="QTitleText" for="phoneInput">Phone Number</label>
+        <!-- This is where they will put their phone number -->
+          <div class="col-md-4">
+            <div class="input-group">
+              <input id="phoneInput" name="phoneInput" class="form-control" type="text" placeholder="(xxx) xxx-xxxx">
+            </div>
+          </div>
+      </div>
     </div>
-    <p class="help-block">Click if you want to share your phone number with other STEM gals</p>
+    <div class="row">
+      <div class="content col-1">
+        <label class="QTitleText" for="majorTag">Major/Interest</label>
+        <!-- This is where they will put their major -->
+          <div class="col-md-4">
+            <select id="majorTag" name="majorTag" class="form-control">
+              <option value="1">Computer Science</option>
+              <option value="2">Computer Engineering</option>
+              <option value="3">Electrical Engineering</option>
+              <option value="4">Software Engineering</option>
+              <option value="">N/A (Highschooler)</option>
+            </select>
+          </div>
+      </div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+    </div>
+
+    <div class="row">
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="content col-2">
+        <label class="QTitleText" for="phoneInput">Interests? (Pick up to 3)</label>
+        <!-- Here are the choices for interests. Each input tag must have the same name. For this question, the name is q1. -->
+        <!-- The value is which answer the choice corresponds to. -->
+        <label><input type="radio" name="q1" value="c1">
+          Experimenting, discovering, and learning
+        </label><br />
+        <label><input type="radio" name="q1" value="c2">
+          Helping others
+        </label><br />
+        <label><input type="radio" name="q1" value="c3">
+          Music, movies, games, and making others laugh
+        </label><br />
+        <label><input type="radio" name="q1" value="c4">
+          Taking risks
+        </label><br /></div>
+    </div>
+
+    <div class="row">
+      <div class="content col-3">
+        <button type="submit" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
+        <button type="reset" id="reset" onclick="resetAnswer()">Reset</button></div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+    </div>
   </div>
-</div>
 
-<!-- Select Basic -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="majorTag">Major/Concentration</label>
-  <div class="col-md-4">
-    <select id="majorTag" name="majorTag" class="form-control">
-      <option value="1">Computer Science</option>
-      <option value="2">Computer Engineering</option>
-      <option value="3">Electrical Engineering</option>
-      <option value="4">Software Engineering</option>
-      <option value="">Other (specify below)</option>
-    </select>
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="majorText">Other Major</label>
-  <div class="col-md-4">
-  <input id="majorText" name="majorText" type="text" placeholder="(optional)" class="form-control input-md">
-
-  </div>
-</div>
-
-</fieldset>
 </form>
 
 
 
 
-
-
-
-  <form id="quiz">
-    <!-- Question 1 -->
-    <h2>What gets you the most excited?</h2>
-    <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
-    <!-- The value is which answer the choice corresponds to. -->
-    <label><input type="radio" name="q1" value="c1">
-      Experimenting, discovering, and learning
-    </label><br />
-    <label><input type="radio" name="q1" value="c2">
-      Helping others
-    </label><br />
-    <label><input type="radio" name="q1" value="c3">
-      Music, movies, games, and making others laugh
-    </label><br />
-    <label><input type="radio" name="q1" value="c4">
-      Taking risks
-    </label><br />
-
-
-    <button type="submit" id="submit" onclick="/≥≤lateAnswers()">Submit Your Answers</button>
-  <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
-  </form>
-
-
-  <div id="answer">Your result will show up here!</div>
-</div>
-
-
-  </body>
+</body>
 </html>

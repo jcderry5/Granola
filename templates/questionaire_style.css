@@ -1,0 +1,86 @@
+h1{
+    font-size: 60px;
+    text-align: center;
+
+}
+#description {
+    font-size: 20px;
+    text-align: center;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.QTitleText{
+    font-size: 35px;
+    text-align: left;
+    margin-right: 40px;
+}
+.container, .spacer, .content, .row {
+    display: flex;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+    flex-flow: row wrap;
+
+}
+
+.row {
+    width: 100%;
+}
+
+.spacer {
+    /*background-color: #f39c12;*/
+    color: #2c3e50;
+    flex: 1 1 0%;
+}
+
+.content {
+    color: #ecf0f1;
+    flex : 3 1 0%;
+    flex-basis: 60%
+}
+
+.content, .spacer {
+    justify-content: center;
+    align-items: center;
+    min-height: 5em;
+    margin: 0.5em;
+}
+  
+.col-1 {
+    background-color: rgb(136, 212, 171);
+}
+
+.col-2 {
+    background-color: rgb(133,184,157);
+}
+
+.col-3 {
+    background-color: rgb(130,156,142);
+}
+
+form{
+    width: 1000px;
+    margin: 0 auto;
+    border-style: hidden;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+input[type=text] {
+    transition: width 0.4s ease-in-out;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: x-large;
+    transition: width 0.4s ease-in-out;
+}
+
+input:hover ~ span {
+    width: 200px;
+    margin-left: -105px;
+}
