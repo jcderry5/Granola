@@ -81,20 +81,46 @@
         <label class="QTitleText" for="phoneInput">Interests? (Pick up to 3)</label>
         <!-- Here are the choices for interests. Each input tag must have the same name. For this question, the name is q1. -->
         <!-- The value is which answer the choice corresponds to. -->
-        <label><input type="radio" name="q1" value="c1">
-          Experimenting, discovering, and learning
-        </label><br />
-        <label><input type="radio" name="q1" value="c2">
-          Helping others
-        </label><br />
-        <label><input type="radio" name="q1" value="c3">
-          Music, movies, games, and making others laugh
-        </label><br />
-        <label><input type="radio" name="q1" value="c4">
-          Taking risks
-        </label><br /></div>
+          <table>
+            <!-- Row 1 -->
+            <tr>
+              <td>
+                <label><input class="checkmark" type="checkbox" name="q1" value="c1">Robotics</label><br />
+              </td>
+              <td>
+                <label><input class="checkmark" type="checkbox" name="q1" value="c2">Circuitry</label><br />
+              </td>
+              <td>
+                <label><input class="checkmark" type="checkbox" name="q1" value="c4">Energy</label><br />
+              </td>
+            </tr>
+            <!-- Row Two -->
+            <tr>
+              <td>
+                <label><input class="checkmark" type="checkbox" name="q1" value="c3">Biology</label><br />
+              </td>
+              <td>
+                <label><input class="checkmark" type="checkbox" name="q1" value="c3">Chemistry</label><br />
+              </td>
+              <td>
+                <label><input class="checkmark" type="checkbox" name="q1" value="c3">Physics</label><br />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label><input class="checkmark" type="checkbox" name="q1" value="c3">Artificial Intelligence</label><br />
+              </td>
+              <td>
+                <label><input class="checkmark" type="checkbox" name="q1" value="c3">Web Devlopment</label><br />
+              </td>
+              <td>
+                <label><input class="checkmark" type="checkbox" name="q1" value="c3">Cyber Security</label><br />
+              </td>
+            </tr>
+          </table>
+        </div>
     </div>
-
+    <br>
     <div class="row">
       <div class="content col-3">
         <button type="submit" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
