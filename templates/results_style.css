@@ -11,14 +11,9 @@ body{
     font-family: 'Ubuntu', sans-serif;
     background-image: url(papyrus.webp);
 }
-.QTitleText{
-    font-size: 35px;
-    text-align: left;
-    margin-right: 40px;
-}
 .container, .spacer, .content, .row {
     display: flex;
-    height: 200px;
+    height: 350px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -57,15 +52,15 @@ body{
 }
   
 .col-1 {
-    background-color: rgb(136, 212, 171);
+    background-color: rgb(154, 157, 242);
 }
 
 .col-2 {
-    background-color: rgb(133,184,157);
+    background-color: rgb(183,185,246);
 }
 
 .col-3 {
-    background-color: rgb(130,156,142);
+    background-color: rgb(212,213,249);
 }
 
 form{
@@ -138,24 +133,22 @@ select {
     box-sizing: border-box;
 }
 
-[type=submit]{
-    font-size: 40px;
-    background-color: #818A85;
+img{
+    height: 250px;
+    width: 250px;
     border-style: solid;
-    border-color: black;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    border-width: 3px;
-    color: black;
-    padding: 16px 48px;
-    text-decoration: none;
-    margin: 4px auto;
-    cursor: pointer;
-    font-family: Product Sans Regular,serif;
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-  }
-  [type=submit]:hover {
-    font-size: 60px;
-  }
+    border-radius: 25px;
+    max-width:100%;
+    height:auto;
+    margin: 15px;
+}
+p{
+    font-size: 20px;
+    margin: 15px;
+}
+h2{
+    margin: 15px;
+    font-size: 35px;
+    text-align: left;
+    margin-right: 40px;
+}
