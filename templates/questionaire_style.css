@@ -138,7 +138,7 @@ select {
     box-sizing: border-box;
 }
 
-[type=submit]{
+#submit{
     font-size: 40px;
     background-color: #818A85;
     border-style: solid;
@@ -155,7 +155,8 @@ select {
     display: flex;
     justify-content: center;
     margin-top: 15px;
-  }
-  [type=submit]:hover {
+}
+
+#submit:hover{
     font-size: 60px;
-  }
+}
