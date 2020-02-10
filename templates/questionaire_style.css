@@ -49,6 +49,11 @@ body{
     min-height: 5em;
     margin: 0.5em;
 }
+
+.col-1, .col-2, .col-3{
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #888;
+}
   
 .col-1 {
     background-color: rgb(136, 212, 171);
@@ -80,7 +85,25 @@ input[type=text] {
     transition: width 0.4s ease-in-out;
 }
 
-input:hover ~ span {
-    width: 200px;
-    margin-left: -105px;
+td{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 17px;
 }
+
+.checkmark{
+    padding-left: 35px;
+    margin-bottom: 12px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    font-size: 20px;
+  }
