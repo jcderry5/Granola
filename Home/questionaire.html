@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Questionaire</title>
+    <link href="questionaire_style.css" rel="stylesheet" type ="text/css">
+    <script src="questionaire_commands.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+  <h1>Match you with your STEM sister!</h1>
+  <p id="description">This is a sample paragraph that will have smarticle information later</p>
+  
+  <div class="container">
+    <div class="row">
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="content col-1">
+        <label class="QTitleText" for="nameTag">Name</label>
+          <!-- This is where they will put their name -->
+          <div class="col-md-4">
+            <input id="nameTag" name="nameTag" type="text" placeholder="Last Name, First Name" class="form-control input-md" required="">
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="content col-2">
+        <label class="QTitleText" id="n1" for="emailInput">Email</label>
+        <!-- This is where they will put their email -->
+          <div class="col-md-4">
+            <div class="input-group">
+              <input id="emailTag" name="emailTag" type="text" placeholder="myemail@gmail.com" class="form-control input-md" required="">
+            </div>
+       </div>
+      </div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+    </div>
+
+    <div class="row">
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="content col-3">
+        <label class="QTitleText" for="phoneInput">Phone Number</label>
+        <!-- This is where they will put their phone number -->
+          <div class="col-md-4">
+            <div class="input-group">
+              <input id="phoneInput" name="phoneInput" class="form-control" type="text" placeholder="(xxx) xxx-xxxx">
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="content col-1">
+        <label class="QTitleText" for="majorTag">Major/Interest</label>
+        <!-- This is where they will put their major -->
+          <div class="col-md-4">
+            <select id="majorTag" name="majorTag" class="form-control">
+              <option value="1">Computer Science</option>
+              <option value="2">Computer Engineering</option>
+              <option value="3">Electrical Engineering</option>
+              <option value="4">Software Engineering</option>
+              <option value="">N/A (Highschooler)</option>
+            </select>
+          </div>
+      </div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+    </div>
+
+    <div class="row">
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="content col-2">
+        <label class="QTitleText" for="phoneInput">Interests? (Pick up to 3)</label>
+        <!-- Here are the choices for interests. Each input tag must have the same name. For this question, the name is q1. -->
+        <!-- The value is which answer the choice corresponds to. -->
+        <label><input type="radio" name="q1" value="c1">
+          Experimenting, discovering, and learning
+        </label><br />
+        <label><input type="radio" name="q1" value="c2">
+          Helping others
+        </label><br />
+        <label><input type="radio" name="q1" value="c3">
+          Music, movies, games, and making others laugh
+        </label><br />
+        <label><input type="radio" name="q1" value="c4">
+          Taking risks
+        </label><br /></div>
+    </div>
+
+    <div class="row">
+      <div class="content col-3">
+        <button type="submit" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
+        <button type="reset" id="reset" onclick="resetAnswer()">Reset</button></div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+      <div class="spacer">(spacer)</div>
+    </div>
+  </div>
+
+</form>
+
+
+
+
+</body>
+</html>
